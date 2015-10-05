@@ -144,8 +144,9 @@ everything beyond that, you could do:
 
 ```javascript
 value.interpolate({
-  inputRange: [-300, -100, 0, 100, 101],
-  outputRange: [300,    0, 1,   0,   0],
+By default, if one animation is stopped or interrupted, then all other
+animations in the group are also stopped.  Parallel has a `stopTogether` option
+that can be set to `false` to disable this.
 });
 ```
 
